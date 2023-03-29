@@ -1,0 +1,24 @@
+POST http://localhost:3000/todos/add
+    Content-Type: application/json
+
+    {
+        "task": "Buy groceries",
+        "completed": false
+    }
+
+###
+
+GET http://localhost:3000/todos
+
+###
+
+DELETE http://localhost:3000/todos/delete/2
+
+###
+
+PUT http://localhost:3000/todos/update/21
+    Content-Type: application/json
+
+    {
+        "completed": true
+    }
